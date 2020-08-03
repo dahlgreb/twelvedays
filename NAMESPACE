@@ -3,7 +3,7 @@
 export("%>%")
 export(make_phrase)
 export(pluralize_gift)
-export(sing_line)
+export(sing_day)
 import(dplyr)
 import(glue)
 import(purrr)

@@ -13,7 +13,7 @@
 #' @import purrr
 #'
 #' @export
-sing_line <- function(dataset, line, phrase_col){
+sing_day <- function(dataset, line, phrase_col){
 
   phrases <- dataset %>% pull({{phrase_col}})
 
