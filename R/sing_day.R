@@ -16,6 +16,7 @@
 sing_day <- function(dataset, line, phrase_col){
 
   phrases <- dataset %>% pull({{phrase_col}})
+  phrases <- as.character(phrases)
 
   days <- c('first', 'second', 'third', 'fourth', 'fifth', 'sixth',
             'seventh', 'eigth', 'ninth', 'tenth', 'eleventh', 'twelfth')
