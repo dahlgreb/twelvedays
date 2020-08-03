@@ -26,5 +26,5 @@ sing_day <- function(dataset, line, phrase_col){
   else{
     gifts <- map_chr(phrases[line:1], ~glue(.x))
   }
-  return(cat(out,gifts, sep="\n"))
+  return(paste(out, glue_collapse(gifts, sep = "\n"), sep="\n"))
 }
